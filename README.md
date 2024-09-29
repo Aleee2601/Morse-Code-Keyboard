@@ -1,8 +1,8 @@
 # Morse-Code-Keyboard
-##Project Overview
+## Project Overview
 The Morse Code Keyboard is an innovative project that allows users to input Morse code through a set of buttons, which are mapped to Morse signals (dots and dashes). Inspired by the "Tap Strap" wearable keyboard, this project simplifies the process of typing Morse code by using a microcontroller, buttons, and an LCD for visual feedback. This project is designed for users who are learning Morse code, those who enjoy experimenting with alternative input methods, or individuals with communication disabilities seeking alternative ways to interact with devices.
 
-##How the Project Was Created
+## How the Project Was Created
 This project was inspired by the Tap Strap, a wearable keyboard that translates finger gestures into text. My idea was to take this concept and adapt it to Morse code, simplifying it for easy implementation using basic hardware and an online simulator. The goal was to create an accessible, easy-to-use Morse code keyboard with basic components while still allowing full functionality.
 
 I started by outlining how Morse code could be input through simple button presses, with each button corresponding to a different Morse code signal or control function (e.g., separating letters and words). After finalizing the design, I moved on to implementing the hardware connections, using an Arduino microcontroller for managing the input from buttons and displaying the output on an LCD screen.
