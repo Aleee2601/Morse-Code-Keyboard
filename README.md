@@ -37,57 +37,58 @@ I started by outlining how Morse code could be input through simple button press
 - Correctly integrating the hardware and software, such as synchronizing the button inputs with the LCD output.
 
 ## Features
-Morse Code Input: Each button press is mapped to Morse code signals:
-Dot (.) – Index finger
-Dash (-) – Middle finger
-Letter Separator – Ring finger
-Word Separator – Pinky finger
-Real-Time Text Display: The LCD screen displays the decoded text as the user inputs Morse code.
-LED Feedback: Optional LEDs provide visual confirmation for each input.
-Debounced Button Presses: To prevent false input readings, button presses are debounced, ensuring only valid inputs are processed.
+- Morse Code Input: Each button press is mapped to Morse code signals:
+  - Dot (.) – Index finger
+  - Dash (-) – Middle finger
+  - Letter Separator – Ring finger
+  - Word Separator – Pinky finger
+- Real-Time Text Display: The LCD screen displays the decoded text as the user inputs Morse code.
+- LED Feedback: Optional LEDs provide visual confirmation for each input.
+- Debounced Button Presses: To prevent false input readings, button presses are debounced, ensuring only valid inputs are processed.
+
 ## Hardware Requirements
 To recreate this project, you will need the following components:
 
-Arduino Microcontroller: Serves as the central unit for processing inputs and displaying output.
-4 Buttons: Each button corresponds to a specific Morse code signal or control.
-LCD Screen: Displays the decoded Morse code in real-time.
-4 LEDs (Optional): Provides visual feedback for button presses.
-Potentiometer (250kΩ): Used to adjust the voltage and current in the circuit.
-Resistors, wires, and breadboard: Required for connecting components and stabilizing the circuit.
-Software Requirements
-Arduino IDE: Used to write and upload the code to the Arduino microcontroller.
-Libraries:
-gpiozero: For reading button inputs and managing the hardware interaction.
-I2C_LCD_driver: For controlling the LCD display.
+- Arduino Microcontroller: Serves as the central unit for processing inputs and displaying output.
+- 4 Buttons: Each button corresponds to a specific Morse code signal or control.
+- LCD Screen: Displays the decoded Morse code in real-time.
+- 4 LEDs (Optional): Provides visual feedback for button presses.
+- Potentiometer (250kΩ): Used to adjust the voltage and current in the circuit.
+- Resistors, wires, and breadboard: Required for connecting components and stabilizing the circuit.
+## Software Requirements
+- Arduino IDE: Used to write and upload the code to the Arduino microcontroller.
+- Libraries:
+  - `gpiozero`: For reading button inputs and managing the hardware interaction.
+  - `I2C_LCD_driver`: For controlling the LCD display.
 ## Code Functionality
-Button Input Detection:
+1. Button Input Detection:
 
-The system detects which button is pressed and for how long to distinguish between dots and dashes. The debouncing code ensures the system doesn’t register multiple presses from a single input.
-Morse Code Conversion:
+- The system detects which button is pressed and for how long to distinguish between dots and dashes. The debouncing code ensures the system doesn’t register multiple presses from a single input.
+2. Morse Code Conversion:
 
-The program converts the button presses into dots and dashes, which are then translated into corresponding letters or numbers based on the Morse code dictionary.
-Text Display:
+- The program converts the button presses into dots and dashes, which are then translated into corresponding letters or numbers based on the Morse code dictionary.
+3. Text Display:
 
-The converted characters are displayed on the LCD screen. Separating characters or words is achieved by pressing the appropriate buttons, and the LCD screen updates accordingly.
-Setup Instructions
-## Hardware Setup
-Connect the buttons to the Arduino's digital input pins.
-Attach the LCD screen using I2C communication to the designated Arduino pins.
-Connect the LEDs (optional) to the output pins.
-Ensure resistors and a potentiometer are placed appropriately for voltage control.
-Use the breadboard to stabilize the connections.
-## Software Setup
-Install the required libraries (gpiozero, I2C_LCD_driver) in the Arduino IDE.
-Upload the Morse code translation code to the Arduino using the IDE.
-Ensure all connections are secure and start testing the inputs.
+- The converted characters are displayed on the LCD screen. Separating characters or words is achieved by pressing the appropriate buttons, and the LCD screen updates accordingly.
+## Setup Instructions
+### Hardware Setup
+1. Connect the buttons to the Arduino's digital input pins.
+2. Attach the LCD screen using I2C communication to the designated Arduino pins.
+3. Connect the LEDs (optional) to the output pins.
+4. Ensure resistors and a potentiometer are placed appropriately for voltage control
+5. Use the breadboard to stabilize the connections.
+### Software Setup
+1. Install the required libraries (`gpiozero`, `I2C_LCD_driver`) in the Arduino IDE.
+2. Upload the Morse code translation code to the Arduino using the IDE.
+3. Ensure all connections are secure and start testing the inputs.
 ## Troubleshooting
-Incorrect Inputs: If the buttons are not registering properly, double-check the connections and ensure the debounce code is functioning.
-LCD Display Issues: Ensure the LCD is initialized correctly, and the I2C connection is working as expected. If characters are missing or garbled, try adjusting the timing in the code.
-Signal Detection Errors: Check the button press durations and confirm they align with the defined dot and dash timings.
+1. Incorrect Inputs: If the buttons are not registering properly, double-check the connections and ensure the debounce code is functioning.
+2. LCD Display Issues: Ensure the LCD is initialized correctly, and the I2C connection is working as expected. If characters are missing or garbled, try adjusting the timing in the code.
+3. Signal Detection Errors: Check the button press durations and confirm they align with the defined dot and dash timings.
 ## Future Development
-Glove Implementation: In the future, I plan to integrate the buttons into a glove, making it more ergonomic and wearable for real-time usage.
-Gesture Support: Adding functionality for pressing multiple buttons simultaneously to further enhance user input and reduce button clutter.
-Wireless Version: Potential integration with wireless communication modules to send Morse code remotely.
+1. Glove Implementation: In the future, I plan to integrate the buttons into a glove, making it more ergonomic and wearable for real-time usage.
+2. Gesture Support: Adding functionality for pressing multiple buttons simultaneously to further enhance user input and reduce button clutter.
+3. Wireless Version: Potential integration with wireless communication modules to send Morse code remotely.
 ## Conclusion
 The Morse Code Keyboard project offers an alternative input method that combines simplicity with educational value. It provides a hands-on learning experience with Morse code while being highly customizable and adaptable. This project has room for further development, including more advanced features such as gesture recognition or a wearable design.
 
