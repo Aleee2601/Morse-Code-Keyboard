@@ -1,4 +1,5 @@
 # Morse-Code-Keyboard
+LINK: https://www.tinkercad.com/things/kQ6hXCGQYym-morse-code-keyboard?sharecode=HF8FjvM98KxyiWDN-gokzRl477Wp5w61GvisSgwPQPI
 ## Project Overview
 The Morse Code Keyboard is an innovative project that allows users to input Morse code through a set of buttons, which are mapped to Morse signals (dots and dashes). Inspired by the "Tap Strap" wearable keyboard, this project simplifies the process of typing Morse code by using a microcontroller, buttons, and an LCD for visual feedback. This project is designed for users who are learning Morse code, those who enjoy experimenting with alternative input methods, or individuals with communication disabilities seeking alternative ways to interact with devices.
 
