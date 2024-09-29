@@ -9,14 +9,12 @@ I started by outlining how Morse code could be input through simple button press
 
 ## Key Steps in Development:
 1. Concept Design:
-
 - The idea was to simplify Morse code input by assigning each finger a specific role* The index finger inputs dots (short signals).
   - The middle finger inputs dashes (long signals). 
   - The ring finger is used to separate letters.
   - The pinky finger separates words.
 
 2. Hardware Prototyping:
-
 - I selected components based on availability and ease of use.
 - Four buttons were connected to the Arduino to represent the Morse signals and delimiters.
 - An LCD screen was added for visual feedback of the input text.
@@ -24,22 +22,20 @@ I started by outlining how Morse code could be input through simple button press
 - I used resistors, a potentiometer, and a breadboard to stabilize the circuit and ensure accurate signals were being processed by the Arduino.
 
 3. Coding:
-
 - I wrote the core program in C/C++ for the Arduino, focusing on detecting button presses and differentiating between short and long presses.
 - A debounce method was added to ensure that each button press was accurately read by the microcontroller without registering false inputs.
 - The Morse code input was mapped to a pre-defined dictionary of characters for conversion into text.
 - The output was displayed on the LCD screen using the I2C_LCD_driver library, with each letter appearing after a complete signal sequence was inputted.
 
 4. Testing and Refining:
-
 - During the development, several issues arose, such as incorrect signal detection and text display errors on the LCD.
 - I implemented a debouncing algorithm for more accurate button presses and resolved display problems by adjusting the initialization of the LCD screen.
 
 5. Challenges:
-
 - Ensuring stable hardware connections, especially on the breadboard.
 - Implementing a user-friendly software interface for smooth interaction.
 - Correctly integrating the hardware and software, such as synchronizing the button inputs with the LCD output.
+
 ## Features
 Morse Code Input: Each button press is mapped to Morse code signals:
 Dot (.) – Index finger
