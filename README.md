@@ -10,9 +10,8 @@ I started by outlining how Morse code could be input through simple button press
 ## Key Steps in Development:
 1. Concept Design:
 
-- The idea was to simplify Morse code input by assigning each finger a specific role:
-- The index finger inputs dots (short signals).
-- The middle finger inputs dashes (long signals).
+- The idea was to simplify Morse code input by assigning each finger a specific role* The index finger inputs dots (short signals).
+*  The middle finger inputs dashes (long signals).
 - The ring finger is used to separate letters.
 - The pinky finger separates words.
 2. Hardware Prototyping:
