@@ -20,7 +20,6 @@ Morse Code Keyboard is an innovative hardware project that transforms tactile bu
 - **Debounced Button Presses:**  
   Integrated debounce algorithms ensure that each press is accurately registered without false triggers.
 
----
 
 ## Technologies Used
 
@@ -51,7 +50,6 @@ Morse Code Keyboard is an innovative hardware project that transforms tactile bu
   - `I2C_LCD_driver` for controlling the LCD display  
   - Custom debounce routines to ensure accurate input detection
 
----
 
 ## Installation and Setup
 
@@ -81,7 +79,6 @@ Morse Code Keyboard is an innovative hardware project that transforms tactile bu
      - Accurate translation of Morse code into text on the LCD.
      - Proper functioning of optional LED indicators.
 
----
 
 ## Troubleshooting
 
@@ -94,7 +91,6 @@ Morse Code Keyboard is an innovative hardware project that transforms tactile bu
 - **Signal Timing Errors:**  
   Ensure that the duration of button presses accurately corresponds to the defined timings for dots and dashes.
 
----
 
 ## Future Enhancements
 
